@@ -1,0 +1,14 @@
+body{
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    background-color: #C8C8CA;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+h1, h2{
+    color: navy
+}
+
+p, ul, ol {
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
