@@ -15,7 +15,10 @@ h1 {
     font-weight: bold;
     font-size:  22px;
 }
-.h1class{
+.h1-primary{
+    text-align: center;
+}
+.h1-secondary{
     font-size:  18px;
 }
 li span{
@@ -26,9 +29,7 @@ li span{
     font-weight: bold;
     text-decoration: none;
 }
-.h1-center{
-    text-align: center;
-}
+
 .footer {
 
     text-align: right;
@@ -41,12 +42,10 @@ li span{
     margin: auto;
     width: 80%;
     background-color: yellow;
-    /*width: 1024px;*/
     text-align: left;
-    /*text-decoration-style: ;*/
+
 }
 .centerD {
-    /*width: 2024px;*/
     margin: auto;
 }
 .boldt{
@@ -56,10 +55,7 @@ h3 {
     color: blueviolet;
     margin-left: 30px;
 }
-/*p {
-    color: cornflowerblue;
-    margin-left: 20px;
-}*/
+
 strong {
     margin-left: 20px;
 }
