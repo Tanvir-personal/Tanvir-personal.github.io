@@ -4,6 +4,8 @@ body {
     font-size: 11pt;
     color: #404040;
     background-image: url("recipeImages/background.gif");
+    margin-left: 40px;
+    margin-top: 15px;
 }
 
 h1 {
