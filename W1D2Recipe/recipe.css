@@ -1,0 +1,91 @@
+body {
+    background-color: white;
+    font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    color: #404040;
+    background-image: url("recipeImages/background.gif");
+}
+
+h1 {
+    color: #A4A400;
+    background-color: #F0F0F0 ;
+    font-family: Lucida Sans Unicode, Helvetica, Arial, Verdana, serif;
+    font-weight: bold;
+    font-size:  22px;
+}
+.h1class{
+    font-size:  18px;
+}
+li span{
+    text-decoration: underline;
+    margin-left: 0px;
+}
+.bold-text {
+    font-weight: bold;
+    text-decoration: none;
+}
+.h1-center{
+    text-align: center;
+}
+.footer {
+
+    text-align: right;
+    margin-left: 0px;
+}
+.validator{
+    text-align: right;
+}
+.comment {
+    margin: auto;
+    width: 80%;
+    background-color: yellow;
+    /*width: 1024px;*/
+    text-align: left;
+    /*text-decoration-style: ;*/
+}
+.centerD {
+    /*width: 2024px;*/
+    margin: auto;
+}
+.boldt{
+    text-decoration-style: solid;
+}
+h3 {
+    color: blueviolet;
+    margin-left: 30px;
+}
+/*p {
+    color: cornflowerblue;
+    margin-left: 20px;
+}*/
+strong {
+    margin-left: 20px;
+}
+span{
+    margin-left: 20px;
+}
+a {
+    color: #A4A400;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+.firstcharacter {
+    color: #903;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
