@@ -1,0 +1,58 @@
+body {
+    background-image: url("images/background.png");
+    font-family: Verdana, Geneva, Tahoma, sans-serif sans-serif;
+    font-size: 8pt;
+
+}
+
+#outer-div {
+    background-image: url("images/bannerbg.png");
+    height: 50px;
+    width: 100%;
+    background-repeat: repeat-x; 
+    text-align: center;
+}
+
+#inner-div {
+    display: inline-block;
+    ;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24pt;
+    text-shadow: 3px 3px #999999;
+}
+
+#main-layout {
+    width: 800px;
+    margin: auto;
+    border: 4px solid gray;
+    border-radius: 20px;
+}
+
+#overview {
+    float: right;
+}
+
+.round-border-top-right {
+    border-top-right-radius: 20px;
+}
+
+.round-border-top-left {
+    border-top-left-radius: 20px;
+}
+
+#rotten {
+    float: left;
+
+}
+
+#inner-rotten {
+    background: url("images/rbg.png");
+    height: 83px;
+    width: 100%;
+    background-repeat: repeat-x; 
+    text-align: center;
+}
