@@ -62,7 +62,7 @@ console.log("Expected output of reverse(proxy) is yxorp  " + myFunctionTest("yxo
 console.log("Expected output of findLongestWord([john, doe, forky, switch, hi]) is switch  " 
     + myFunctionTest("switch", findLongestWord(["john", "doe", "forky", "switch", "hi"])));
 
-    console.log("Expected output of filterLongtWords([john, doe, forky, switch, hi]) is [john, forky, switch]  " 
+    console.log("Expected output of filterLongtWords([john, doe, forky, switch, hi],3) is [john, forky, switch]  " 
     + myFunctionTest(["john", "forky", "switch"].toString(), filterLongtWords(["john", "doe", "forky", "switch", "hi"], 3).toString()));
 
 
