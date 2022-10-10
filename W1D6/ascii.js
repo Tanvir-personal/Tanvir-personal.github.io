@@ -97,3 +97,4 @@ function goTurbo(){
 	const turboCheckbox = document.getElementById('turbo');
    return (turboCheckbox.checked)? TURBO_SPEED : DEFAULT_SPEED;
 };
+

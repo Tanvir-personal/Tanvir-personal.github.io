@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W2D1 Quiz</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // initialize mocha
+        mocha.setup('bdd');
+        // chai has a lot of stuff, let's make assert global
+        let assert = chai.assert;
+
+    </script>
+
+    <script>
+        const earliestSpace = (...str) => {
+            // const indexA = a.indexOf(" ");
+            // const indexB = b.indexOf(" ");
+            // const indexC = c.indexOf(" ");
+
+            // const min = Math.min(indexA, indexB, indexC);
+            // if(min === indexA) return a;
+            // else if(min === indexB) return b;
+            // else return c;
+            return str.reduce((x,y) => (x.indexOf(" ").length < y.indexOf(" ").length)? x : y);
+        }
+    </script>
+    <script>
+        describe("earliestSpace", function () {
+            it("takes 3 strings, and returns whicherver string has a space character at the lowest index",
+                function () {
+                    assert.equal("bla bla bla", earliestSpace("This is a test", "Where it checks for spaces",
+                        "bla bla bla"));
+                });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script>
+        mocha.run();
+
+    </script>
+</body>
+
+</html>

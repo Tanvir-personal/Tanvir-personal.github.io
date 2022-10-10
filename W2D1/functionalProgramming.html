@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W2D1 Quiz</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // initialize mocha
+        mocha.setup('bdd');
+        // chai has a lot of stuff, let's make assert global
+        let assert = chai.assert;
+
+    </script>
+
+    <script>
+        const sum = a => a.reduce((x,y) => x + y, 0);
+        const multiply = a => a.reduce((x,y) => x * y, 1);
+        const reverse = str => [...str].reduce((x,y) => y.concat(x));
+        const filterLongWords = (str, i) => str.filter(x => x.length > i);
+        
+    </script>
+    <script>
+        describe("sum", function () {
+            it("takes an array of numbers, and returns the sum of all elements",
+                function () {
+                    assert.equal(6, sum([3,2,1]));
+                });
+        });
+
+        describe("multiply", function () {
+            it("takes an array of numbers, and returns the product of all elements",
+                function () {
+                    assert.equal(36, multiply([3,2,6]));
+                });
+        });
+
+        describe("reverse", function () {
+            it("takes an array of words and an integer i and returns the array of words that are longer than i",
+                function () {
+                    assert.equal('avaj', reverse('java'));
+                });
+        });
+
+        describe("filter long words", function () {
+            it("takes an array of numbers, and returns the sum of all elements",
+                function () {
+                    assert.deepEqual(["john", "forky", "switch"], filterLongWords(["john", "doe", "forky", "switch", "hi"], 3));
+                });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script>
+        mocha.run();
+
+    </script>
+</body>
+
+</html>
