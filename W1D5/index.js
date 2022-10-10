@@ -27,6 +27,8 @@ const reverse = (str) => [...str].reduce((x,y) => y.concat(x));
 
 const findLongestWord = (str) => str.reduce((x,y) => x.length > y.length ? x : y);
 
+const findShortestWord = (...str) => str.reduce((x,y) => x.length < y.length ? x : y);
+
 const filterLongtWords = (str, i) => str.filter(x => x.length > i); 
 
 const myFunctionTest  = (expected, found) => {
@@ -42,6 +44,8 @@ const myFunctionTest  = (expected, found) => {
 // console.log(reverse("proxy"));
 // console.log(findLongestWord(["john", "doe", "forky", "switch", "hi"]));
 // console.log(filterLongtWords(["john", "doe", "forky", "switch", "hi"], 3));
+
+console.log(findShortestWord("abc", "zo", "abcd", "nnnn"));
 
 // ----- TEST METHODS to validate all functions
 
