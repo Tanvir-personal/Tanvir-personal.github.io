@@ -63,6 +63,7 @@ const stopAction = () => {
    box.value = word;
    word = ""; 
    clearInterval(time);
+   time = null;
    speed = null;
    index = 0;
    document.getElementById("animation").disabled = false;
