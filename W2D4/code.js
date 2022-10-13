@@ -33,17 +33,17 @@ Person.prototype.initialize = function(name, age){
 Person.prototype.describe = function(){
     return this.name + ", " + this.age + " years old.";
 }
-const Student = function() {};
-
-Student.prototype = new Person();
 
 const Teacher = function(){};
+
 Teacher.prototype = new Person();
+
 Teacher.prototype.initialize = function(name, age) {
     Person.call(this);
     this.name = name;
     this.age = age;
 }
+
 Teacher.prototype.teach = function(subject){
     return(`${this.name} is now teaching ${subject}`);
 }
