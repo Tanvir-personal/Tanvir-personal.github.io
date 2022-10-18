@@ -276,28 +276,28 @@
 // CAR.status();
 
 //--------------------------------------------------------------------------
-const Computer = function() {};
-Computer.prototype.ram = 'RAM01';
-Computer.prototype.cpu = 'CPU01';
-Computer.prototype.storage = 'STORAGE01';
+// const Computer = function() {};
+// Computer.prototype.ram = 'RAM01';
+// Computer.prototype.cpu = 'CPU01';
+// Computer.prototype.storage = 'STORAGE01';
 
-Computer.prototype.runProgram = function(program){
-    console.log(`running: ${program}`);
-}
+// Computer.prototype.runProgram = function(program){
+//     console.log(`running: ${program}`);
+// }
 
-const Laptop = function(){};
+// const Laptop = function(){};
 
-Laptop.prototype = new Computer();
-Laptop.prototype.battery = 'battery01';
+// Laptop.prototype = new Computer();
+// Laptop.prototype.battery = 'battery01';
 
-Laptop.prototype.carryAround = function() {
-    Computer.call(this);
-    console.log( "carrying laptop:  cpu: " + this.cpu +" ram: " + this.ram + " storage: " + this.storage + " battery: " + this.battery);
-}
+// Laptop.prototype.carryAround = function() {
+//     Computer.call(this);
+//     console.log( "carrying laptop:  cpu: " + this.cpu +" ram: " + this.ram + " storage: " + this.storage + " battery: " + this.battery);
+// }
 
 
-const laptop = new Laptop();
-laptop.carryAround();
+// const laptop = new Laptop();
+// laptop.carryAround();
 
 //------------------------
 
@@ -327,5 +327,32 @@ laptop.carryAround();
 //     return b.bind({a:5, b:20});
 
 // }
+
+//-----------------------------------
+class Computer {
+    constructor(ram, cpu, storage){
+        this.ram = ram;
+        this.cpu = cpu;
+        this.storage = storage;
+    }
+    runProgram(program){
+        console.log(`running: ${program}`);
+
+    }
+}
+
+class Laptop extends Computer{
+    constructor(ram, cpu, storage, battery){
+        super(ram, cpu, storage);
+        this.battery = battery;
+    }
+    carryAround(){
+        console.log( "carrying laptop:  cpu: " + this.cpu +" ram: " + this.ram + " storage: " + this.storage + " battery: " + this.battery);
+    }
+
+}
+
+const laptop = new Laptop(32, 2.4, 500, 10000);
+laptop.carryAround();
 
 
