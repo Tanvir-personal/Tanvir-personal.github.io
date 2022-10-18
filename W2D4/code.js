@@ -3,7 +3,7 @@ String.prototype.filter = function(str){
 }
 
 const s = new String("hello NOT world");
- console.log(s.filter(''));
+console.log(s.filter(''));
 
 Array.prototype.bubbleSort = function() {
     let a = this;
