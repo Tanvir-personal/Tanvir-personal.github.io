@@ -93,7 +93,7 @@ describe("Bank tests", function () {
     });
     it("returns account number: 3 after calling addCheckingAccount(100)", () => {
         assert.equal(bank.addCheckingAccount(100), 3);
-        bank.toString();
+        // bank.toString();
     });
     it("returns account report", () => {
         console.log(`BANK ACCOUNTS REPORT#`)
