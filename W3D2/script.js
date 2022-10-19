@@ -4,6 +4,11 @@ $(function(){
       $speed = $("#speed");
       $noOfCircles = $("#noOfCircles");
 
+      //-------type="text", value="hello world" name="hello"
+      // const $input = $('<input>', {type: 'text', value: 'hello world', name: 'hello'});
+      // $("#circles").append($input);
+      //-------------------------------
+
       $("#start").on("click", function(event){
             for(let i = 0; i < $($noOfCircles).val(); i++){
                   createCircle();
