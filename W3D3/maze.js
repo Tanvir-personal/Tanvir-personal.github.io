@@ -49,7 +49,7 @@ $(function(){
       });
 
       $(document).on("mouseover", function(event){
-            if(isStart && ($(event.target).closest("#maze").length === 0)){
+            if(isStart && isWallHit === 0 && ($(event.target).closest("#maze").length === 0)){
                   console.log("isCheated: " + isCheated);
                   isCheated = true;
                   hitWall();
