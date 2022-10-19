@@ -13,6 +13,8 @@ $(function(){
       const createCircle = () => {
             const $circle = $('<div>', {class: 'circle inlineBlock absolute'});
             $circle.css("background-color", createRandomColor());
+            $circle.css("width", $width.val());
+            $circle.css("height", $width.val());
             $("#circles").append($circle);
 
             let position = getRandomPosition($circle);
