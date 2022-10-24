@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 3000;
 app.use(session({
       resave: false,
       saveUninitialized: false,
-      secret: 'lskdjflsd8989',
+      secret: `LSD8989${Math.random().toString(20).substr(2, 6)}`,
 }));
 
 app.use(express.urlencoded({ extended: true }));
@@ -26,7 +26,7 @@ app.set('views', path.join(__dirname, 'view'));
 
 app.get('/', (req, res) => {
       // const productList = products.products;
-      res.render('index', { productList });
+      res.render('index', { productList, cart: req.session.cart });
 });
 
 app.get('/details/:prodId', (req, res) => {
