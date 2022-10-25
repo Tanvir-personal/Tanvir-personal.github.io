@@ -26,6 +26,10 @@ app.set('views', path.join(__dirname, 'view'));
 
 app.get('/', (req, res) => {
       // const productList = products.products;
+      console.log(req.headers['user-agent'].length);
+      req.session.cookie = { browser: req.headers['user-agent'] };
+      console.log(req.sessionID);
+      console.log('hello');
       res.render('index', { productList, cart: req.session.cart });
 });
 
