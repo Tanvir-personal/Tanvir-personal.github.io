@@ -17,5 +17,7 @@
             </li>
             <%}%>
       </ul>
+      <input type="hidden" name="cartItemCount" id="cartItemCount" value="<%= cart.products.map(p => p.quantity).reduce((a, b) => a + b, 0) %>">
+      <a id="view-cart" href="/cart">View Cart <span id="count"></span></a>   
 </body>
 </html>
