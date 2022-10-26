@@ -1,14 +1,17 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable no-undef */
 $(() => {
+    const clearMsg = () => $('#msg').text('');
+
     const addedSuccess = (data, status) => {
         $('#msg').text('Product added to cart');
         console.log(data);
         $('#count').html(`(${data.count})`);
+        setTimeout(clearMsg, 5000);
     };
     const noSuccess = () => {
         $('#msg').text('Unable to reach server');
-      //   setTimeout(clearMsg, 10000);
+        setTimeout(clearMsg, 5000);
     };
 
     // eslint-disable-next-line eqeqeq
