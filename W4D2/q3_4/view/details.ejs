@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utif-8">
+      <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+      <title>Details</title>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="/js/helper.js"></script>
+</head>
+<body>
+      Product: <%= product[0].name %><br>
+      price: <%= product[0].price %><br>
+      <form id="add">
+            <input type="hidden" name="id" id="productId" value="<%= product[0].id %>"><br>
+            <button type="submit">add to cart</button>
+            <span id="msg"></span>
+      </form>
+      <input type="hidden" name="cartItemCount" id="cartItemCount" value="<%= cart.products.map(p => p.quantity).reduce((a, b) => a + b, 0) %>">
+      <a id="view-cart" href="/cart">View Cart <span id="count"></span></a>   
+      <br>
+      <a href="/">back to home</a>
+</body>
+</html>

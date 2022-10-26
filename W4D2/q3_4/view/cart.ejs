@@ -1,0 +1,13 @@
+<% if (cart === {} || cart.products.length == 0) {%>
+      <h2>Shopping Cart empty</h2>
+<%} else {%>
+      <h2>Shopping Cart</h2>
+      <% for(let i = 0; i < cart.products.length; i++){
+            let product = cart.products[i];  
+      %>
+            Product: <%=product.name%>, unit price: <%=product.price%>, quantity: <%=product.quantity%>, Price: <%=product.quantity * product.price%><br>
+      <%}%>
+      TOTAL PRICE: <%= cart.totalPrice %> 
+      <br><br>
+      <a href="/">continue shopping</a>
+<%}%>
